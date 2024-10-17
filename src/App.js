@@ -1,9 +1,15 @@
+import React from 'react';
+
+
+
+
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import './App.css';
 import MovieCard from './MovieCard';
 
-const API_URL = 'https://omdbapi.com?apikey=fe2f6c44';
+
+  const API_URL = 'https://omdbapi.com?apikey=fe2f6c44';
 const App = () => {
     const [movies, setMovies] = useState([]);
     const [searchTerm, setSearchTerm] = useState([]);
@@ -48,3 +54,4 @@ const App = () => {
         </div>
     );
 }
+export default App;
